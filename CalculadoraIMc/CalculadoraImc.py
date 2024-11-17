@@ -15,3 +15,12 @@ def classificar_imc(imc):
         return 'Obesidade grau II'
     else:
         return 'Obesidade mórbida'
+    
+# Fluxo principal
+if __name__ == "__main__":
+    peso = float(input("Informe o seu peso: (Kg)"))
+    altura = float(input("Informe o sua altura: (M)"))
+    imc = calcular_imc(peso, altura)
+
+    print(f"O seu IMC é: {imc:.2f}")
+    print(classificar_imc(imc))
